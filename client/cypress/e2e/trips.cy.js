@@ -1,13 +1,13 @@
-const faker = require('faker');
+const { faker } = require('@faker-js/faker');
 
 const driverEmail = faker.internet.email();
-const driverFirstName = faker.name.firstName();
-const driverLastName = faker.name.lastName();
+const driverFirstName = faker.person.firstName();
+const driverLastName = faker.person.lastName();
 const riderEmail = faker.internet.email();
-const riderFirstName = faker.name.firstName();
-const riderLastName = faker.name.lastName();
-const addressA = faker.address.streetAddress();
-const addressB = faker.address.streetAddress();
+const riderFirstName = faker.person.firstName();
+const riderLastName = faker.person.lastName();
+const addressA = faker.location.streetAddress();
+const addressB = faker.location.streetAddress();
 
 
 describe('Trips', function () {
