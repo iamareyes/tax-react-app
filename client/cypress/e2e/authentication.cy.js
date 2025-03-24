@@ -1,9 +1,9 @@
-const faker = require('faker');
+const { faker } = require('@faker-js/faker');
 
 // changed
 const email = faker.internet.email();
-const firstName = faker.name.firstName();
-const lastName = faker.name.lastName();
+const firstName = faker.person.firstName();
+const lastName = faker.person.lastName();
 
 
 describe('Authentication', function () {
